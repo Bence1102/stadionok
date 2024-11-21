@@ -18,9 +18,10 @@ print(f"Az összes csapat száma: {feladat2}")
 
 
 #feladat3=feladatok.lista_1900_elott(stadionok)
-#print(f"Az összes stadion száma: {feladat3}")
+#print(f"Az stadionok amik 1900-01-01 előtt : {feladat3}")
 
-
+feladat4=feladatok.ketezer(stadionok)
+print(f"Azoknak a stadionoknak amelyikekben nem volt 2000-óta mérkőzésének a száma : {feladat4}")
 
 
 

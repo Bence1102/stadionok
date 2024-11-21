@@ -21,14 +21,19 @@ def osszes_csapat(stadion_lista):
 
 def lista_1900_elott(stadion_lista):
     eredmeny = []
-    for stadion in stadion_lista:
-        if stadion.elso_merk.strftime("%Y-%m-%d") < "1900-01-01":
-            eredmeny.append(stadion)
+    for i in range(0,len(stadion_lista),1):
+        if stadion_lista[i].utolso_merk < datetime.strftime("1900-01-01","%Y-%m-%d"):
+            eredmeny.append(stadion_lista)
     return eredmeny
 
 
 
-
+def ketezer(stadion_lista):
+    ketezres:int=0
+    for i in range (1,len(stadion_lista)):
+        if stadion_lista[i].utolso_merk <datetime.strptime("2000-01-01","%Y-%m-%d"):
+            ketezres+=1
+    return ketezres
 
 
 
